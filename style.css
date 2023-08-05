@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    font-size: 1.6rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 19.2rem;
+
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.time{
+    display: inline-flex;
+    height: 11.7rem;
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.time span{
+    color: #323238;
+    font-family: 'Roboto';
+    font-size: 12.6rem;
+    font-style: normal;
+    font-weight: 50rem;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.buttons{
+    display: flex;
+    gap: 4rem;
+}
+
+.sounds{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+
+}
+
+.changeStation path:nth-child(1){
+    fill:#02799D;
+}
+
+.changeStation path:nth-last-child(1){
+    fill: white;
+}
+
