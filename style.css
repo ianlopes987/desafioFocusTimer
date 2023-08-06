@@ -5,14 +5,33 @@
 }
 
 :root{
+    --body-bg: white;
+    --body-color: #323238;
+    --fill-one-bg: #02799D;
+    --fill-color-bg: white;
+    --fill-normal: #E1E1E6;
+    --fill-color: #323238;
+    --fill-button-bg: #323238;
+    font-size: 62.5%;
+}
 
+.dark-mode:root{
+    --body-bg: black;
+    --body-color: white;
+    --fill-one-bg: #0A3442;
+    --fill-color-bg: white;
+    --fill-normal: #29292E;
+    --fill-color: #C4C4CC;
+    --fill-button-bg: #C4C4CC;
     font-size: 62.5%;
 }
 
 body{
-    height: 100vh;
+    background-color: var(--body-bg);
+    min-height: 100vh;
     display: grid;
     font-size: 1.6rem;
+
 }
 
 main {
@@ -21,7 +40,6 @@ main {
     align-items: center;
     justify-content: center;
     gap: 19.2rem;
-
 }
 
 button {
@@ -47,7 +65,7 @@ button {
 }
 
 .time span{
-    color: #323238;
+    color: var(--body-color);
     font-family: 'Roboto';
     font-size: 12.6rem;
     font-style: normal;
@@ -68,11 +86,36 @@ button {
 
 }
 
+button svg path:nth-child(1){
+    fill: var(--fill-normal);
+}
+
+button svg path:nth-last-child(1){
+    fill: var(--fill-color);
+}
+
 .changeStation path:nth-child(1){
-    fill:#02799D;
+    fill: var(--fill-one-bg);
 }
 
 .changeStation path:nth-last-child(1){
-    fill: white;
+    fill: var(--fill-color-bg);
 }
+
+header{
+
+    display: block;
+    position: absolute;
+    right: 6rem;
+    top: 6rem;
+}
+
+.hide{
+    display: none;
+}
+
+.buttons button svg path{
+    fill: var(--fill-button-bg);
+}
+
 

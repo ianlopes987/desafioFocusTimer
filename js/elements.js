@@ -8,10 +8,13 @@ const selectForest = document.querySelector(".forest");
 const selectRain = document.querySelector(".rain");
 const selectFire = document.querySelector(".fire");
 const selectShop = document.querySelector(".shop");
+const buttonSun = document.querySelector(".sun");
+const buttonDark = document.querySelector(".dark");
 const buttonPressAudioForest = document.querySelector(".audioForest");
 const buttonPressAudioRain = document.querySelector(".audioRain");
 const buttonPressAudioFire = document.querySelector(".audioFire");
 const buttonPressAudioShop = document.querySelector(".audioShop");
+const selectTagHtml = document.querySelector("html");
 
 
 export{
@@ -28,6 +31,9 @@ export{
     buttonPressAudioFire,
     buttonPressAudioShop,
     buttonPlus,
-    buttonMinus
+    buttonMinus,
+    buttonSun,
+    buttonDark,
+    selectTagHtml
 
 }

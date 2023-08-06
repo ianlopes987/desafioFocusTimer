@@ -15,7 +15,9 @@ import {
     buttonPressAudioFire,
     buttonPressAudioShop,
     buttonPlus,
-    buttonMinus
+    buttonMinus,
+    buttonSun,
+    buttonDark
 }  from "./elements.js"
 
 
@@ -60,5 +62,12 @@ buttonMinus.addEventListener("click",function(){
     timer.setMinutesMinus();
 })
 
+buttonSun.addEventListener("click",function(){
+    controls.pressButtonSun();
+})
+
+buttonDark.addEventListener("click",function(){
+    controls.pressButtonDark();
+})
 
 

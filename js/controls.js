@@ -13,7 +13,10 @@ import {
     buttonPressAudioFire,
     buttonPressAudioShop,
     buttonPlus,
-    buttonMinus
+    buttonMinus,
+    buttonSun,
+    buttonDark,
+    selectTagHtml
 }  from "./elements.js"
 
 
@@ -53,10 +56,24 @@ export default function Controls({selectForest,selectRain,selectFire,selectShop}
         selectShop.classList.add("changeStation");
     }
 
+    function pressButtonSun(){
+        buttonDark.classList.remove("hide");
+        buttonSun.classList.add("hide");
+        selectTagHtml.classList.add("dark-mode");
+    }
+
+    function pressButtonDark(){
+        buttonDark.classList.add("hide");
+        buttonSun.classList.remove("hide");
+        selectTagHtml.classList.remove("dark-mode");
+    }
+
     return{
         inputForest,
         inputRain,
         inputFire,
-        inputShop
+        inputShop,
+        pressButtonSun,
+        pressButtonDark
     }
 }
